@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.enhance" href="enhance.html" /><link rel="prev" title="kornia.color" href="color.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/contrib.html" />
 
@@ -325,7 +325,7 @@
 <dt class="sig sig-object py" id="kornia.contrib.models.base.ModelBase.compile">
 <span class="sig-name descname"><span class="pre">compile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fullgraph</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dynamic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'inductor'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/models/base.html#ModelBase.compile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.models.base.ModelBase.compile" title="Permalink to this definition">#</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.contrib.models.base.ModelBase" title="kornia.contrib.models.base.ModelBase">ModelBase</a>[ModelConfig]</p>
 </dd>
 </dl>
@@ -336,10 +336,10 @@
 <em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/models/base.html#ModelBase.from_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.models.base.ModelBase.from_config" title="Permalink to this definition">#</a></dt>
 <dd><p>This function should build/load the model.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>config</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypeVar" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code></a>(<code class="docutils literal notranslate"><span class="pre">ModelConfig</span></code>)) – The specifications for the model be build/loaded</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.contrib.models.base.ModelBase" title="kornia.contrib.models.base.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypeVar" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code></a>(<code class="docutils literal notranslate"><span class="pre">ModelConfig</span></code>)]</p>
 </dd>
 </dl>
@@ -350,14 +350,14 @@
 <span class="sig-name descname"><span class="pre">load_checkpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checkpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/models/base.html#ModelBase.load_checkpoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.models.base.ModelBase.load_checkpoint" title="Permalink to this definition">#</a></dt>
 <dd><p>Load checkpoint from a given url or file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>checkpoint</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The url or filepath for the respective checkpoint</p></li>
 <li><p><strong>device</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.device" title="(in PyTorch v2.0)"><em>torch.device</em></a><em> | </em><em>None</em><em>, </em><em>optional</em>) – The desired device to load the weights and move the model
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
@@ -378,7 +378,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.contrib.models.</span></span><span class="sig-name descname"><span class="pre">SegmentationResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scores</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/models/structures.html#SegmentationResults"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.models.SegmentationResults" title="Permalink to this definition">#</a></dt>
 <dd><p>Encapsulate the results obtained by a Segmentation model.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>logits</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Results logits with shape <span class="math notranslate nohighlight">\((B, C, H, W)\)</span>, where <span class="math notranslate nohighlight">\(C\)</span> refers to the number of predicted masks</p></li>
 <li><p><strong>scores</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The scores from the logits. Shape <span class="math notranslate nohighlight">\((B,)\)</span></p></li>
@@ -410,7 +410,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">0.0<
 <dd><p>Remove padding and upscale the logits to the original image size.</p>
 <p>Resize to image encoder input -&gt; remove padding (bottom and right) -&gt; Resize to original size</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input_size</strong> – The size of the image input to the model, in (H, W) format. Used to remove padding.</p></li>
 <li><p><strong>original_size</strong> – The original size of the image before resizing for input to the model, in (H, W) format.</p></li>
@@ -418,7 +418,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">0.0<
 logits back to encoder resolution before remove the padding.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Batched logits in <span class="math notranslate nohighlight">\((K, C, H, W)\)</span> format, where (H, W) is given by original_size.</p>
 </dd>
 </dl>
@@ -434,7 +434,7 @@ logits back to encoder resolution before remove the padding.</p></li>
 <span class="sig-name descname"><span class="pre">squeeze</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/models/structures.html#SegmentationResults.squeeze"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.models.SegmentationResults.squeeze" title="Permalink to this definition">#</a></dt>
 <dd><p>Realize a squeeze for the dim given for all properties.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.contrib.models.SegmentationResults" title="kornia.contrib.models.structures.SegmentationResults"><code class="xref py py-class docutils literal notranslate"><span class="pre">SegmentationResults</span></code></a></p>
 </dd>
 </dl>
@@ -447,7 +447,7 @@ logits back to encoder resolution before remove the padding.</p></li>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.contrib.models.</span></span><span class="sig-name descname"><span class="pre">Prompts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boxes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">masks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/models/structures.html#Prompts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.models.Prompts" title="Permalink to this definition">#</a></dt>
 <dd><p>Encapsulate the prompts inputs for a Model.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points</strong> (<em>optional</em>) – A tuple with the keypoints (coordinates x, y) and their respective labels. Shape <span class="math notranslate nohighlight">\((K, N, 2)\)</span> for
 the keypoints, and <span class="math notranslate nohighlight">\((K, N)\)</span>
@@ -503,7 +503,7 @@ automatically for the method <cite>preprocess_image</cite>, which is responsible
 the right size for the SAM model <span class="math notranslate nohighlight">\((   ext{image_encoder.img_size},    ext{image_encoder.img_size})\)</span>. For
 default the image is normalized by the mean and standard deviation of the SAM dataset values.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>config</strong> (<a class="reference internal" href="#kornia.contrib.models.sam.SamConfig" title="kornia.contrib.models.sam.SamConfig"><em>SamConfig</em></a><em>, </em><em>optional</em>) – A model config to generate the model. Now just the SAM model is supported.
 Default:  <code class="code docutils literal notranslate"><span class="pre">SamConfig(model_type='vit_h',</span> <span class="pre">checkpoint='https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth')</span></code></p></li>
@@ -543,7 +543,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <a class="reference external" href="https://pytorch.org/docs/stable/generated/torch.compile.html">https://pytorch.org/docs/stable/generated/torch.compile.html</a></p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fullgraph</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether it is ok to break model into several subgraphs
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
@@ -559,7 +559,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">{}</
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
@@ -576,7 +576,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keypoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keypoints_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boxes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">masks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multimask_output</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_original_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/visual_prompter.html#VisualPrompter.predict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.visual_prompter.VisualPrompter.predict" title="Permalink to this definition">#</a></dt>
 <dd><p>Predict masks for the given image based on the input prompts.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>keypoints</strong> (<a class="reference internal" href="geometry.keypoints.html#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><em>Keypoints</em></a><em> | </em><em>Tensor</em><em> | </em><em>None</em><em>, </em><em>optional</em>) – Point prompts to the model. Each point is in (X,Y) in pixels. Shape <span class="math notranslate nohighlight">\((K, N, 2)\)</span>. Where
 <cite>N</cite> is the number of points and <cite>K</cite> the number of prompts.
@@ -600,10 +600,10 @@ original input image size.
 Default:  <code class="code docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.contrib.models.SegmentationResults" title="kornia.contrib.models.SegmentationResults">SegmentationResults</a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A prediction with the logits and scores (IoU of each predicted mask)</p>
 </dd>
 </dl>
@@ -618,7 +618,7 @@ Sam Dataset values.</p>
 <p>For pad the tensor: Will pad the tensor into the right and bottom to match with the size of
 <cite>self.model.image_encoder.img_size</cite></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>Tensor</em>) – The image to be preprocessed</p></li>
 <li><p><strong>mean</strong> (<em>Tensor</em><em> | </em><em>None</em><em>, </em><em>optional</em>) – Mean for each channel.
@@ -627,10 +627,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>Tensor</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The image preprocessed (normalized if has mean and str available and padded to encoder size)</p>
 </dd>
 </dl>
@@ -641,7 +641,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <span class="sig-name descname"><span class="pre">preprocess_prompts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keypoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keypoints_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boxes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">masks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/visual_prompter.html#VisualPrompter.preprocess_prompts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.visual_prompter.VisualPrompter.preprocess_prompts" title="Permalink to this definition">#</a></dt>
 <dd><p>Validate and preprocess the given prompts to be aligned with the input image.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.contrib.models.Prompts" title="kornia.contrib.models.Prompts">Prompts</a></p>
 </dd>
 </dl>
@@ -653,12 +653,12 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <dd><p>Set the embeddings from the given image with <cite>image_decoder</cite> of the model.</p>
 <p>Prepare the given image with the selected transforms and the preprocess method.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>image</strong> (<em>Tensor</em>) – RGB image. Normally images with range of [0-1], the model preprocess normalize the
 pixel values with the mean and std defined in its initialization. Expected to be into a float32
 dtype. Shape <span class="math notranslate nohighlight">\((3, H, W)\)</span>.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
@@ -675,7 +675,7 @@ dtype. Shape <span class="math notranslate nohighlight">\((3, H, W)\)</span>.</p
 <dd><p>Detect edges in a given image using a CNN.</p>
 <p>By default, it uses the method described in <span id="id1">[<a class="reference internal" href="community/bibliography.html#id24" title="X. Soria, E. Riba, and A. Sappa. Dense extreme inception network: towards a robust cnn model for edge detection. In 2020 IEEE Winter Conference on Applications of Computer Vision (WACV), volume, 1912-1921. Los Alamitos, CA, USA, mar 2020. IEEE Computer Society. URL: https://doi.ieeecomputersociety.org/10.1109/WACV45572.2020.9093290, doi:10.1109/WACV45572.2020.9093290.">SRS20</a>]</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A tensor of shape <span class="math notranslate nohighlight">\((B,1,H,W)\)</span>.</p>
 </dd>
 </dl>
@@ -698,7 +698,7 @@ dtype. Shape <span class="math notranslate nohighlight">\((3, H, W)\)</span>.</p
 <dd><p>Detect faces in a given image using a CNN.</p>
 <p>By default, it uses the method described in <span id="id2">[<a class="reference internal" href="community/bibliography.html#id23" title="Yuantao Feng, Shiqi Yu, Hanyang Peng, Yan-ran Li, and Jianguo Zhang. Detect faces efficiently: a survey and evaluations. IEEE Transactions on Biometrics, Behavior, and Identity Science, 2021.">FYP+21</a>]</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>top_k</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <em>optional</em>) – the maximum number of detections to return before the nms.
 Default:  <code class="code docutils literal notranslate"><span class="pre">5000</span></code></p></li>
@@ -710,7 +710,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">0.3<
 Default:  <code class="code docutils literal notranslate"><span class="pre">750</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>A list of B tensors with shape <span class="math notranslate nohighlight">\((N,15)\)</span> to be used with <a class="reference internal" href="#kornia.contrib.FaceDetectorResult" title="kornia.contrib.FaceDetectorResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">kornia.contrib.FaceDetectorResult</span></code></a>.</p>
 </dd>
 </dl>
@@ -759,7 +759,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">750<
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.contrib.</span></span><span class="sig-name descname"><span class="pre">FaceDetectorResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/face_detection.html#FaceDetectorResult"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.FaceDetectorResult" title="Permalink to this definition">#</a></dt>
 <dd><p>Encapsulate the results obtained by the <a class="reference internal" href="#kornia.contrib.FaceDetector" title="kornia.contrib.FaceDetector"><code class="xref py py-class docutils literal notranslate"><span class="pre">kornia.contrib.FaceDetector</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>data</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the encoded results coming from the feature detector with shape <span class="math notranslate nohighlight">\((14,)\)</span>.</p>
 </dd>
 </dl>
@@ -780,10 +780,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">750<
 <span class="sig-name descname"><span class="pre">get_keypoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keypoint</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/face_detection.html#FaceDetectorResult.get_keypoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.FaceDetectorResult.get_keypoint" title="Permalink to this definition">#</a></dt>
 <dd><p>The [x y] position of a given facial keypoint.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>keypoint</strong> (<a class="reference internal" href="#kornia.contrib.FaceKeypoint" title="kornia.contrib.face_detection.FaceKeypoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">FaceKeypoint</span></code></a>) – the keypoint type to return the position.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>
@@ -806,7 +806,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">750<
 <span class="sig-name descname"><span class="pre">to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/face_detection.html#FaceDetectorResult.to"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.FaceDetectorResult.to" title="Permalink to this definition">#</a></dt>
 <dd><p>Like <code class="xref py py-func docutils literal notranslate"><span class="pre">torch.nn.Module.to()</span></code> method.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.contrib.FaceDetectorResult" title="kornia.contrib.face_detection.FaceDetectorResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">FaceDetectorResult</span></code></a></p>
 </dd>
 </dl>
@@ -879,7 +879,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">750<
 <p>See a working example <a class="reference external" href="https://kornia-tutorials.readthedocs.io/en/latest/connected_components.html">here</a>.</p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the binarized input image with shape <span class="math notranslate nohighlight">\((*, 1, H, W)\)</span>.
 The image must be in floating point with range [0, 1].</p></li>
@@ -887,10 +887,10 @@ The image must be in floating point with range [0, 1].</p></li>
 Default:  <code class="code docutils literal notranslate"><span class="pre">100</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The labels image with the same shape of the input image.</p>
 </dd>
 </dl>
@@ -929,7 +929,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">100<
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.contrib.models.sam.</span></span><span class="sig-name descname"><span class="pre">SamConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_embed_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_num_heads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_global_attn_indexes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/models/sam/model.html#SamConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.models.sam.SamConfig" title="Permalink to this definition">#</a></dt>
 <dd><p>Encapsulate the Config to build a SAM model.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>model_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> | </em><a class="reference internal" href="#kornia.contrib.models.sam.SamModelType" title="kornia.contrib.models.sam.SamModelType"><em>SamModelType</em></a><em> | </em><em>None</em><em>, </em><em>optional</em>) – <p>the available models are:
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p>
@@ -992,7 +992,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_encoder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt_encoder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_decoder</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/models/sam/model.html#Sam.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.models.sam.Sam.__init__" title="Permalink to this definition">#</a></dt>
 <dd><p>SAM predicts object masks from an image and input prompts.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image_encoder</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">ImageEncoderViT</span></code>) – The backbone used to encode the image into image embeddings that allow for efficient mask
 prediction.</p></li>
@@ -1010,7 +1010,7 @@ prediction.</p></li>
 <p>This method expects that the images have already been pre-processed, at least been normalized, resized and
 padded to be compatible with the <cite>self.image_encoder</cite>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>images</strong> – The image as a torch tensor in <span class="math notranslate nohighlight">\((B, 3, H, W)\)</span> format, already transformed for input to the
 model.</p></li>
@@ -1042,7 +1042,7 @@ Where 1 indicates a foreground point and 0 indicates a background point.</p></li
 <li><p><strong>multimask_output</strong> – Whether the model should predict multiple disambiguating masks, or return a single mask.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><dl class="simple">
 <dt>A list over input images, where each element is as SegmentationResults the following.</dt><dd><ul class="simple">
 <li><dl class="simple">
@@ -1065,14 +1065,14 @@ Where 1 indicates a foreground point and 0 indicates a background point.</p></li
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/models/sam/model.html#Sam.from_config"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.models.sam.Sam.from_config" title="Permalink to this definition">#</a></dt>
 <dd><p>Build/load the SAM model based on it’s config.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>config</strong> (<a class="reference internal" href="#kornia.contrib.models.sam.SamConfig" title="kornia.contrib.models.sam.model.SamConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">SamConfig</span></code></a>) – The SamConfig data structure. If the model_type is available, build from it, otherwise will use
 the parameters set.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.contrib.models.sam.Sam" title="kornia.contrib.models.sam.model.Sam"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sam</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The respective SAM model</p>
 </dd>
 </dl>
@@ -1088,14 +1088,14 @@ the parameters set.</p>
 <span class="sig-name descname"><span class="pre">load_checkpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checkpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#kornia.contrib.models.sam.Sam.load_checkpoint" title="Permalink to this definition">#</a></dt>
 <dd><p>Load checkpoint from a given url or file.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>checkpoint</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – The url or filepath for the respective checkpoint</p></li>
 <li><p><strong>device</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.device" title="(in PyTorch v2.0)"><em>torch.device</em></a><em> | </em><em>None</em><em>, </em><em>optional</em>) – The desired device to load the weights and move the model
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
@@ -1113,16 +1113,16 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <dd><p>Compute required padding to ensure chaining of <a class="reference internal" href="#kornia.contrib.extract_tensor_patches" title="kornia.contrib.extract_tensor_patches"><code class="xref py py-func docutils literal notranslate"><span class="pre">extract_tensor_patches()</span></code></a> and
 <a class="reference internal" href="#kornia.contrib.combine_tensor_patches" title="kornia.contrib.combine_tensor_patches"><code class="xref py py-func docutils literal notranslate"><span class="pre">combine_tensor_patches()</span></code></a> produces expected result.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>original_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]) – the size of the original tensor.</p></li>
 <li><p><strong>window_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]) – the size of the sliding window used while extracting patches.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The required padding for <cite>(top, bottom, left, right)</cite> as a tuple of 4 ints.</p>
 </dd>
 </dl>
@@ -1150,7 +1150,7 @@ and <a class="reference internal" href="#kornia.contrib.combine_tensor_patches" 
 <dd><p>Function that extract patches from tensors and stack them.</p>
 <p>See <a class="reference internal" href="#kornia.contrib.ExtractTensorPatches" title="kornia.contrib.ExtractTensorPatches"><code class="xref py py-class docutils literal notranslate"><span class="pre">ExtractTensorPatches</span></code></a> for details.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor image where to extract the patches with shape <span class="math notranslate nohighlight">\((B, C, H, W)\)</span>.</p></li>
 <li><p><strong>window_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]) – the size of the sliding window and the output patch size.</p></li>
@@ -1160,10 +1160,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1</s
 Default:  <code class="code docutils literal notranslate"><span class="pre">0</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the tensor with the extracted patches with shape <span class="math notranslate nohighlight">\((B, N, C, H_{out}, W_{out})\)</span>.</p>
 </dd>
 </dl>
@@ -1187,7 +1187,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">0</s
 <dd><p>Restore input from patches.</p>
 <p>See <a class="reference internal" href="#kornia.contrib.CombineTensorPatches" title="kornia.contrib.CombineTensorPatches"><code class="xref py py-class docutils literal notranslate"><span class="pre">CombineTensorPatches</span></code></a> for details.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>patches</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – patched tensor with shape <span class="math notranslate nohighlight">\((B, N, C, H_{out}, W_{out})\)</span>.</p></li>
 <li><p><strong>original_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]) – the size of the original tensor and the output patch size.</p></li>
@@ -1197,10 +1197,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">0</s
 Default:  <code class="code docutils literal notranslate"><span class="pre">0</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The combined patches in an image tensor with shape <span class="math notranslate nohighlight">\((B, C, H, W)\)</span>.</p>
 </dd>
 </dl>
@@ -1259,7 +1259,7 @@ the height dimension, and the second <cite>int</cite> for the width dimension.</
 first two ints are for the height dimension while the last two ints are for
 the width dimension.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>window_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]) – the size of the sliding window and the output patch size.</p></li>
 <li><p><strong>stride</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>], <em>optional</em>) – stride of the sliding window.
@@ -1277,7 +1277,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">0</s
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the tensor with the extracted patches.</p>
 </dd>
 </dl>
@@ -1335,7 +1335,7 @@ the height dimension, and the second <cite>int</cite> for the width dimension.</
 first two ints are for the height dimension while the last two ints are for
 the width dimension.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>patches</strong> – patched tensor.</p></li>
 <li><p><strong>original_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]]) – the size of the original tensor and the output patch size.</p></li>
@@ -1381,7 +1381,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">0</s
 <p>This is an experimental API subject to changes in favor of flexibility.</p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <em>optional</em>) – the size of the input image.
 Default:  <code class="code docutils literal notranslate"><span class="pre">224</span></code></p></li>
@@ -1420,7 +1420,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <p>Paper: <a class="reference external" href="https://arxiv.org/abs/2110.02178">https://arxiv.org/abs/2110.02178</a>
 Based on: <a class="reference external" href="https://github.com/chinhsuanwu/mobilevit-pytorch">https://github.com/chinhsuanwu/mobilevit-pytorch</a></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – ‘xxs’, ‘xs’ or ‘s’, defaults to ‘xxs’.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'xxs'</span></code></p></li>
@@ -1447,7 +1447,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">0.0<
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.contrib.</span></span><span class="sig-name descname"><span class="pre">ClassificationHead</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embed_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">768</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/classification.html#ClassificationHead"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.ClassificationHead" title="Permalink to this definition">#</a></dt>
 <dd><p>Module to be used as a classification head.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>embed_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <em>optional</em>) – the logits tensor coming from the networks.
 Default:  <code class="code docutils literal notranslate"><span class="pre">768</span></code></p></li>
@@ -1473,7 +1473,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">10</
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.contrib.</span></span><span class="sig-name descname"><span class="pre">ImageStitcher</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matcher</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">estimator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ransac'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blending_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'naive'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/image_stitching.html#ImageStitcher"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.ImageStitcher" title="Permalink to this definition">#</a></dt>
 <dd><p>Stitch two images with overlapping fields of view.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>matcher</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></a>) – image feature matching module.</p></li>
 <li><p><strong>estimator</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – method to compute homography, either “vanilla” or “ransac”.
@@ -1507,10 +1507,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'nai
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.contrib.</span></span><span class="sig-name descname"><span class="pre">Lambda</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/lambda_module.html#Lambda"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.Lambda" title="Permalink to this definition">#</a></dt>
 <dd><p>Applies user-defined lambda as a transform.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>func</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/constants.html#Ellipsis" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]) – Callable function.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The output of the user-defined lambda.</p>
 </dd>
 </dl>
@@ -1535,7 +1535,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'nai
 It uses the method described in <span id="id4">[<a class="reference internal" href="community/bibliography.html#id27" title="Duc Duy Pham, Gurbandurdy Dovletov, and Josef Pauli. A differentiable convolutional distance transform layer for improved image segmentation. Pattern Recognition, 12544:432 - 444, 2020.">PDP20</a>]</span>.
 The transformation is applied independently across the channel dimension of the images.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Image with shape <span class="math notranslate nohighlight">\((B,C,H,W)\)</span>.</p></li>
 <li><p><strong>kernel_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <em>optional</em>) – size of the convolution kernel.
@@ -1544,10 +1544,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">3</s
 Default:  <code class="code docutils literal notranslate"><span class="pre">0.35</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>tensor with shape <span class="math notranslate nohighlight">\((B,C,H,W)\)</span>.</p>
 </dd>
 </dl>
@@ -1565,7 +1565,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">0.35
 <dd><p>Generates Plasma Fractal Images using the diamond square algorithm.</p>
 <p>See: <a class="reference external" href="https://en.wikipedia.org/wiki/Diamond-square_algorithm">https://en.wikipedia.org/wiki/Diamond-square_algorithm</a></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>output_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) – a tuple of integers with the BxCxHxW of the image to be generated.</p></li>
 <li><p><strong>roughness</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>], <em>optional</em>) – the scale value to apply at each recursion step.
@@ -1583,10 +1583,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A tensor with shape <span class="math notranslate nohighlight">\((B,C,H,W)\)</span> containing the fractal image.</p>
 </dd>
 </dl>
@@ -1597,7 +1597,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.contrib.</span></span><span class="sig-name descname"><span class="pre">DistanceTransform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.35</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/contrib/distance_transform.html#DistanceTransform"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.contrib.DistanceTransform" title="Permalink to this definition">#</a></dt>
 <dd><p>Module that approximates the Manhattan (city block) distance transform of images using convolutions.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>kernel_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <em>optional</em>) – size of the convolution kernel.
 Default:  <code class="code docutils literal notranslate"><span class="pre">3</span></code></p></li>

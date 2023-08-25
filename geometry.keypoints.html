@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.geometry.calibration" href="geometry.calibration.html" /><link rel="prev" title="kornia.geometry.boxes" href="geometry.boxes.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/geometry.keypoints.html" />
 
@@ -319,7 +319,7 @@
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.geometry.keypoints.</span></span><span class="sig-name descname"><span class="pre">Keypoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keypoints</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_if_not_floating_point</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints" title="Permalink to this definition">#</a></dt>
 <dd><p>2D Keypoints containing Nx2 or BxNx2 points.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>keypoints</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]]) – Raw tensor or a list of Tensors with the Nx2 coordinates</p></li>
 <li><p><strong>raise_if_not_floating_point</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – will raise if the Tensor isn’t float
@@ -331,7 +331,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dt class="sig sig-object py" id="kornia.geometry.keypoints.Keypoints.clone">
 <span class="sig-name descname"><span class="pre">clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints.clone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints.clone" title="Permalink to this definition">#</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a></p>
 </dd>
 </dl>
@@ -358,7 +358,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dt class="sig sig-object py" id="kornia.geometry.keypoints.Keypoints.from_tensor">
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keypoints</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints.from_tensor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints.from_tensor" title="Permalink to this definition">#</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a></p>
 </dd>
 </dl>
@@ -368,7 +368,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dt class="sig sig-object py" id="kornia.geometry.keypoints.Keypoints.index_put">
 <span class="sig-name descname"><span class="pre">index_put</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints.index_put"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints.index_put" title="Permalink to this definition">#</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a></p>
 </dd>
 </dl>
@@ -379,10 +379,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <span class="sig-name descname"><span class="pre">pad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding_size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints.pad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints.pad" title="Permalink to this definition">#</a></dt>
 <dd><p>Pad a bounding keypoints.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 4)</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a></p>
 </dd>
 </dl>
@@ -399,15 +399,15 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dd><p>Cast <a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a> to a tensor. <code class="docutils literal notranslate"><span class="pre">mode</span></code> controls which 2D keypoints format should be use to
 represent keypoints in the tensor.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>as_padded_sequence</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – whether to keep the pads for a list of keypoints. This parameter is only valid
 if the keypoints are from a keypoint list.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Keypoints tensor <span class="math notranslate nohighlight">\((B, N, 2)\)</span></p>
 </dd>
 </dl>
@@ -418,17 +418,17 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">transform_keypoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints.transform_keypoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints.transform_keypoints" title="Permalink to this definition">#</a></dt>
 <dd><p>Apply a transformation matrix to the 2D keypoints.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>M</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The transformation matrix to be applied, shape of <span class="math notranslate nohighlight">\((3, 3)\)</span> or <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
 <li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The transformed keypoints.</p>
 </dd>
 </dl>
@@ -439,7 +439,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">transform_keypoints_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints.transform_keypoints_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints.transform_keypoints_" title="Permalink to this definition">#</a></dt>
 <dd><p>Inplace version of <a class="reference internal" href="#kornia.geometry.keypoints.Keypoints.transform_keypoints" title="kornia.geometry.keypoints.Keypoints.transform_keypoints"><code class="xref py py-func docutils literal notranslate"><span class="pre">Keypoints.transform_keypoints()</span></code></a></p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a></p>
 </dd>
 </dl>
@@ -449,7 +449,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <dt class="sig sig-object py" id="kornia.geometry.keypoints.Keypoints.type">
 <span class="sig-name descname"><span class="pre">type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dtype</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints.type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints.type" title="Permalink to this definition">#</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a></p>
 </dd>
 </dl>
@@ -460,10 +460,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">unpad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding_size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints.unpad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints.unpad" title="Permalink to this definition">#</a></dt>
 <dd><p>Pad a bounding keypoints.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 4)</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a></p>
 </dd>
 </dl>
@@ -476,7 +476,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.geometry.keypoints.</span></span><span class="sig-name descname"><span class="pre">Keypoints3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keypoints</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_if_not_floating_point</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints3D"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints3D" title="Permalink to this definition">#</a></dt>
 <dd><p>3D Keypoints containing Nx3 or BxNx3 points.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>keypoints</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]]) – Raw tensor or a list of Tensors with the Nx3 coordinates</p></li>
 <li><p><strong>raise_if_not_floating_point</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – will raise if the Tensor isn’t float
@@ -488,7 +488,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dt class="sig sig-object py" id="kornia.geometry.keypoints.Keypoints3D.clone">
 <span class="sig-name descname"><span class="pre">clone</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints3D.clone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints3D.clone" title="Permalink to this definition">#</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints3D" title="kornia.geometry.keypoints.Keypoints3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints3D</span></code></a></p>
 </dd>
 </dl>
@@ -503,7 +503,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dt class="sig sig-object py" id="kornia.geometry.keypoints.Keypoints3D.from_tensor">
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">keypoints</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints3D.from_tensor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints3D.from_tensor" title="Permalink to this definition">#</a></dt>
 <dd><dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints3D" title="kornia.geometry.keypoints.Keypoints3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints3D</span></code></a></p>
 </dd>
 </dl>
@@ -514,10 +514,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <span class="sig-name descname"><span class="pre">pad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding_size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints3D.pad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints3D.pad" title="Permalink to this definition">#</a></dt>
 <dd><p>Pad a bounding keypoints.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 6)</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints3D" title="kornia.geometry.keypoints.Keypoints3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints3D</span></code></a></p>
 </dd>
 </dl>
@@ -534,15 +534,15 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dd><p>Cast <a class="reference internal" href="#kornia.geometry.keypoints.Keypoints" title="kornia.geometry.keypoints.Keypoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints</span></code></a> to a tensor. <code class="docutils literal notranslate"><span class="pre">mode</span></code> controls which 2D keypoints format should be use to
 represent keypoints in the tensor.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>as_padded_sequence</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – whether to keep the pads for a list of keypoints. This parameter is only valid
 if the keypoints are from a keypoint list.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Keypoints tensor <span class="math notranslate nohighlight">\((B, N, 3)\)</span></p>
 </dd>
 </dl>
@@ -553,17 +553,17 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">transform_keypoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints3D.transform_keypoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints3D.transform_keypoints" title="Permalink to this definition">#</a></dt>
 <dd><p>Apply a transformation matrix to the 2D keypoints.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>M</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The transformation matrix to be applied, shape of <span class="math notranslate nohighlight">\((3, 3)\)</span> or <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
 <li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints3D" title="kornia.geometry.keypoints.Keypoints3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints3D</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The transformed keypoints.</p>
 </dd>
 </dl>
@@ -574,7 +574,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">transform_keypoints_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints3D.transform_keypoints_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints3D.transform_keypoints_" title="Permalink to this definition">#</a></dt>
 <dd><p>Inplace version of <a class="reference internal" href="#kornia.geometry.keypoints.Keypoints.transform_keypoints" title="kornia.geometry.keypoints.Keypoints.transform_keypoints"><code class="xref py py-func docutils literal notranslate"><span class="pre">Keypoints.transform_keypoints()</span></code></a></p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints3D" title="kornia.geometry.keypoints.Keypoints3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints3D</span></code></a></p>
 </dd>
 </dl>
@@ -585,10 +585,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">unpad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding_size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/keypoints.html#Keypoints3D.unpad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.keypoints.Keypoints3D.unpad" title="Permalink to this definition">#</a></dt>
 <dd><p>Pad a bounding keypoints.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 6)</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.keypoints.Keypoints3D" title="kornia.geometry.keypoints.Keypoints3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Keypoints3D</span></code></a></p>
 </dd>
 </dl>
